@@ -7,7 +7,56 @@
 </head>
 <body>
   <main>
-    <p>This is a test</p>
+    <!-- Intro View -->
+    <div class="introView">
+      <h1>Video Game Trivia!</h1>
+      <h2>Score 3/5 to win!</h2>
+      <button>Start</button>
+    </div>
+    <hr>
+    <!-- Feedback View -->
+    <div class="feedbackView">
+      <p>{Correct/Incorrect Message}</p>
+      <p>{if incorrect will display the correct answer. else will just display good job}</p>
+    </div>
+    <hr>
+    <!-- Question view -->
+    <div class="questionView">
+      <h1>Question {#} of 5</h1>
+      <div class="questionContainer">
+        <p>{Question}</p>
+        <ul>
+          <li>
+            <input type="radio" id="a" name="selection" value="a">
+            <label for="a">A. {Lorem ipsum dolor sit amet.}</label>
+          </li>
+          <li>
+            <input type="radio" id="b" name="selection" value="b">
+            <label for="b">B. {Lorem ipsum dolor sit amet.}</label>
+          </li>
+          <li>
+            <input type="radio" id="c" name="selection" value="c">
+            <label for="c">C. {Lorem ipsum dolor sit amet.}</label>
+          </li>
+          <li>
+            <input type="radio" id="d" name="selection" value="d">
+            <label for="d">D. {Lorem ipsum dolor sit amet.}</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <!-- Results View -->
+    <div class="resultsView">
+      <div class="resultsContainer">
+        <h2>END OF GAME</h2>
+        <p>Score</p>
+        <p>Correct</p>
+        <p>Incorret</p>
+      </div>
+      <p>{Results Message}</p>
+      <button>NEW GAME</button>
+    </div>
   </main>
 </body>
 </html>
